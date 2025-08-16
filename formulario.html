@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Formulario</title>
+  <style>
+    body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: radial-gradient(circle at 15% 10%, #c3ecd8 0%, #0a65ff 35%, #89a7db 100%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .formulario{
+      width: 240px;
+      padding: 22px;
+      border-radius: 18px;
+      background: linear-gradient(#d9d9d9, #ffffff);
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .campo{
+      padding:10px 12px;
+      border:1px solid #000;
+      border-radius:10px;
+      text-align:center;
+      outline:none;
+      background:#fff;
+    }
+    .botones{
+      display:flex;
+      gap:12px;
+      margin-top:4px;
+    }
+    .btn{
+      flex:1;
+      padding:10px;
+      border:1px solid #000;
+      border-radius:10px;
+      background:#fff;
+      cursor:pointer;
+    }
+    .btn:hover{ background:#f2f2f2; }
+  </style>
+</head>
+<body>
+  <form class="formulario" action="#" method="post" autocomplete="off">
+    <input class="campo" type="text" placeholder="nombre" name="nombre">
+    <input class="campo" type="text" placeholder="gmail" name="gmail">
+    <input class="campo" type="password" placeholder="contraseña" name="pass">
+    <input class="campo" type="password" placeholder="confirmar contraseña" name="pass2">
+
+    <div class="botones">
+      <button class="btn" type="submit">confirmar</button>
+      <button class="btn" type="reset">borrar</button>
+    </div>
+  </form>
+
+</body>
+</html>
