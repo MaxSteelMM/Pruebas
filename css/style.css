@@ -3,6 +3,11 @@ body{
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
+
+header{
+    background-color: blue;
+}
+
 div.caja1 {
     margin: 100px;
     padding: 1px;
