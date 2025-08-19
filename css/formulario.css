@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-  <style>
-    body{
+  body{
       margin:0;
       height:100vh;
       display:flex;
@@ -120,27 +113,3 @@
     .btn:hover{
        background:#f2f2f2; 
       }
-
-  </style>
-</head>
-<body>
-    <main>
-      <div id="logo">
-        <img src="img/formulario/WhatsApp Image 2025-08-18 at 23.25.44.jpeg" alt="Logo">
-      </div>
-      <div class="decoracion">
-        <span>Deutschland</span>
-      </div>
-      <form class="formulario" action="#" method="post" autocomplete="off">
-        <input class="campo" type="text" placeholder="Nombre" name="Nombre">
-        <input class="campo" type="text" placeholder="Gmail" name="Gmail">
-        <input class="campo" type="password" placeholder="Contraseña" name="pass">
-        <input class="campo" type="password" placeholder="Confirmar contraseña" name="pass2">
-        <div class="botones">
-          <button class="btn" type="submit">Confirmar</button>
-          <button class="btn" type="reset">Borrar</button>
-        </div>
-    </form>
-  </main>
-</body>
-</html>
