@@ -3,16 +3,23 @@ body{
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
+body{
+      margin:0;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#111;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
 
-header{
-    background-color: blue;
-}
 
-div.caja1 {
-    margin: 100px;
-    padding: 1px;
-    background-color: grey;
-    align-items: center;
-    text-align: center;
-
-}
+      background-image: 
+      repeating-linear-gradient(
+        45deg,
+        #1a1a1a 0px,
+        #3e3b3b 2px,
+        #111 2px,
+        #111 20px
+      );
+    }
