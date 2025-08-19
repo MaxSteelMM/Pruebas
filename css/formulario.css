@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="es-ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
-    <title>Formulario</title>
-
-  <style>
-    body{
+  body{
       margin:0;
       height:100vh;
       display:flex;
@@ -26,10 +17,46 @@
         #111 20px
              );
     }
-    
-    .decoracion{
-      position: relative
-      text-aling: center;
+
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #logo {
+        position: absolute;
+        top: 20px;       /* lo pegás al borde superior */
+        left: 50%;       /* lo centrás horizontalmente */
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo img{
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      border: #000 solid 5px;
+    }
+
+    #logo::before,
+    #logo::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, gold, #fff8b3, gold);
+    }
+
+    #logo::before { left: -140px; }
+    #logo::after  { right: -140px; }
+
+    .decoracion {
+      text-align: center;
       font-size: 28px;
       font-weight: bold;
       color: gold;
@@ -86,28 +113,3 @@
     .btn:hover{
        background:#f2f2f2; 
       }
-
-  </style>
-
-</head>
-<body>
-    <main>
-      <div id="logo">
-        <img src="img/formulario/WhatsApp Image 2025-08-18 at 23.25.44.jpeg" alt="Logo">
-      </div>
-      <div class="decoracion">
-        <span>Deutschland</span>
-      </div>
-      <form class="formulario" action="pruebacolor.html" method="post" autocomplete="off">
-        <input class="campo" type="text" placeholder="Nombre" name="Nombre">
-        <input class="campo" type="text" placeholder="Gmail" name="Gmail">
-        <input class="campo" type="password" placeholder="Contraseña" name="pass">
-        <input class="campo" type="password" placeholder="Confirmar contraseña" name="pass2">
-        <div class="botones">
-          <button class="btn" type="submit">Confirmar</button>
-          <button class="btn" type="reset">Borrar</button>
-        </div>
-    </form>
-  </main>
-</body>
-</html>
