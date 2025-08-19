@@ -3,125 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>Formulario</title>
-  <style>
-    body{
-      margin:0;
-      height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      background: 111;
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-
-      background-image: 
-      repeating-linear-gradient(
-        45deg,
-        #1a1a1a 0px,
-        #1a1a1a 2px,
-        #111 2px,
-        #111 20px
-             );
-    }
-
-    main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    #logo {
-        position: absolute;
-        top: 20px;       /* lo pegás al borde superior */
-        left: 50%;       /* lo centrás horizontalmente */
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #logo img{
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      border: #000 solid 5px;
-    }
-
-    #logo::before,
-    #logo::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 120px;
-      height: 3px;
-      background: linear-gradient(to right, gold, #fff8b3, gold);
-    }
-
-    #logo::before { left: -140px; }
-    #logo::after  { right: -140px; }
-
-    .decoracion {
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      color: gold;
-    }
-
-    .decoracion span{
-      background: linear-gradient(90deg,gold,#fff,gold);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: shine 3s infinite linear;
-      background-size: 200%;
-    }
-
-    @keyframes shine {
-      0% {background-position: 200% center;}
-      100% {background-position: -200% center;}
-    }
-    
-
-    .formulario{
-      width: 240px;
-      padding: 22px;
-      border-radius: 18px;
-      background: linear-gradient(#d9d9d9, #ffffff);
-      box-shadow: 0 8px 24px rgba(0,0,0,.18);
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      border: goldenrod solid 5px;
-    }
-
-    .campo{
-      padding:10px 12px;
-      border:1px solid #000;
-      border-radius:10px;
-      text-align:center;
-      outline:none;
-      background:#fff;
-    }
-
-    .botones{
-      display:flex;
-      gap:12px;
-      margin-top:4px;
-    }
-    .btn{
-      flex:1;
-      padding:10px;
-      border:1px solid #000;
-      border-radius:10px;
-      background:#fff;
-      cursor:pointer;
-    }
-    .btn:hover{
-       background:#f2f2f2; 
-      }
-
-  </style>
 </head>
 <body>
     <main>
@@ -131,7 +14,7 @@
       <div class="decoracion">
         <span>Deutschland</span>
       </div>
-      <form class="formulario" action="#" method="post" autocomplete="off">
+      <form class="formulario" action="pruebacolor.html" method="post" autocomplete="off">
         <input class="campo" type="text" placeholder="Nombre" name="Nombre">
         <input class="campo" type="text" placeholder="Gmail" name="Gmail">
         <input class="campo" type="password" placeholder="Contraseña" name="pass">
