@@ -11,9 +11,54 @@
       display:flex;
       justify-content:center;
       align-items:center;
-      background: radial-gradient(circle at 15% 10%, #c3ecd8 0%, #0a65ff 35%, #89a7db 100%);
+      background: 111;
+      color: white;
       font-family: Arial, Helvetica, sans-serif;
+
+      background-image: 
+      repeating-linear-gradient(
+        45deg,
+        #1a1a1a 0px,
+        #1a1a1a 2px,
+        #111 2px,
+        #111 20px
+             );
     }
+    
+    .decoracion{
+      position: relative
+      text-aling: center;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 20px;
+      color: gold;
+    }
+
+
+    .decoracion::before{
+      left: -140px;
+    }
+
+    .decoracion::after{
+      right: -140px;
+    }
+
+    .decoracion span{
+      display: flex;
+      margin-top: -200px;
+      justify-content: center;
+      background: linear-gradient(90deg,gold,#fff,gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite linear;
+      background-size: 200%;
+    }
+
+    @keyframes shine {
+      0% {background-position: 200% center;}
+      100% {background-position: -200% center;}
+    }
+
     .formulario{
       width: 240px;
       padding: 22px;
@@ -23,6 +68,8 @@
       display:flex;
       flex-direction:column;
       gap:12px;
+      border: goldenrod solid 5px;
+      margin: center;
     }
     .campo{
       padding:10px 12px;
@@ -49,17 +96,20 @@
   </style>
 </head>
 <body>
+    <header class="decoracion">
+      <span>Formulario</span>
+    </header>
+    <main>
      <form class="formulario" action="#" method="post" autocomplete="off">
     <input class="campo" type="text" placeholder="nombre" name="nombre">
     <input class="campo" type="text" placeholder="gmail" name="gmail">
     <input class="campo" type="password" placeholder="contraseña" name="pass">
     <input class="campo" type="password" placeholder="confirmar contraseña" name="pass2">
-
     <div class="botones">
       <button class="btn" type="submit">confirmar</button>
       <button class="btn" type="reset">borrar</button>
     </div>
   </form>
-
+  </main>
 </body>
 </html>
