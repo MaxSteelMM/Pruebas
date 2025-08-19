@@ -24,10 +24,23 @@
         #111 20px
              );
     }
-    
-    .decoracion{
-      position: relative
-      text-aling: center;
+
+    #logo{
+      display: flex;
+      margin-top: -43%;
+      margin-left: 0%;
+    }
+
+    div img{
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      border: #000 solid 5px;
+    }
+
+    .decoracion {
+      position: relative;
+      text-align: center;
       font-size: 28px;
       font-weight: bold;
       padding: 20px;
@@ -43,10 +56,8 @@
       right: -140px;
     }
 
+    
     .decoracion span{
-      display: flex;
-      margin-top: -200px;
-      justify-content: center;
       background: linear-gradient(90deg,gold,#fff,gold);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -58,6 +69,7 @@
       0% {background-position: 200% center;}
       100% {background-position: -200% center;}
     }
+    
 
     .formulario{
       width: 240px;
@@ -92,22 +104,27 @@
       background:#fff;
       cursor:pointer;
     }
-    .btn:hover{ background:#f2f2f2; }
+    .btn:hover{
+       background:#f2f2f2; 
+      }
   </style>
 </head>
 <body>
-    <header class="decoracion">
-      <span>Formulario</span>
-    </header>
+    <div id="logo">
+    <img src="img/formulario/WhatsApp Image 2025-08-18 at 23.25.44.jpeg" alt="Logo">
+    </div>
     <main>
+    <div class="decoracion">
+      <span>Deutschland</span>
+    </div>
      <form class="formulario" action="#" method="post" autocomplete="off">
-    <input class="campo" type="text" placeholder="nombre" name="nombre">
-    <input class="campo" type="text" placeholder="gmail" name="gmail">
-    <input class="campo" type="password" placeholder="contraseña" name="pass">
-    <input class="campo" type="password" placeholder="confirmar contraseña" name="pass2">
+    <input class="campo" type="text" placeholder="Nombre" name="Nombre">
+    <input class="campo" type="text" placeholder="Gmail" name="Gmail">
+    <input class="campo" type="password" placeholder="Contraseña" name="pass">
+    <input class="campo" type="password" placeholder="Confirmar contraseña" name="pass2">
     <div class="botones">
-      <button class="btn" type="submit">confirmar</button>
-      <button class="btn" type="reset">borrar</button>
+      <button class="btn" type="submit">Confirmar</button>
+      <button class="btn" type="reset">Borrar</button>
     </div>
   </form>
   </main>
