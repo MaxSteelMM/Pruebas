@@ -3,22 +3,24 @@ body{
     margin: 0px;
     padding: 0px;
     color:bisque;
+    size: auto;
 }
 
 header{
     background-color: #111111;
-    padding: 1vh;
+    padding: 1.5vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    box-shadow: 0 0 5px 2px inset #362d00;
+    box-shadow: 0 0 1.3vh 0.4vh inset #2c2c2c, -100px 0 5vh 3.5vh inset black;
+    height: 15vh;
 }
 
 nav{
     background-color: #111111;
     margin: 0;
-    padding: 0.1vh;
+    height: 3vh;
 }
 
 ul{
@@ -30,33 +32,68 @@ ul{
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     margin: 0;
     padding: 0;
-    border-top: 1px solid silver;
+    border-top: 1px solid rgb(0, 0, 0);
+    height: 3vh;
 }
 li{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
-    border: 0.1vh solid #111111;
 }
 #Horizontal li:hover{
-    border: 0.1vh solid #c2c2c2;
-    box-shadow: 0 0 5px 2px inset #2D2D2D;
+    border: 1px solid #c2c2c2;
+    box-shadow: 0 0 5px 2px inset #4b4b4b;
 }
 
 #Vertical{
     display: none;
     position: absolute;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    width: 20%;
     padding: 0;
+
 }
 
 nav #Horizontal li:hover #Vertical {
     background-color: #111111;
-    display: grid;
-    margin-top: 20px; /* mejor 0 para que quede pegado al li */
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    display: block;
+    margin-top: 17px; 
     width: 20%;        /* mismo ancho que el li */
+    height: 6vh;
     box-shadow: 0 0 5px 2px inset #171717;
+}
+
+
+main{
+    display: flex;
+    justify-items:stretch ;
+    height: 72vh;
+}
+
+main aside{
+    background-color: #2D2D2D;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    height: 71vh;
+    width: 19.5vw;
+    padding: 20px 5px 30px 5px;
+}
+
+
+
+main article{
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(20px, 1fr));
+    gap: 20px;
+    background-color: #c2c2c2;
+    height: 71vh;
+    width: 80.5vw;
+    padding: 20px 5px 30px 5px;
+    color:#111111;
+}
+
+
+.Auto{
+    background-color: #4e4e4e;
 }
