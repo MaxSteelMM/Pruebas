@@ -75,25 +75,29 @@ main aside{
     background-color: #2D2D2D;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    height: 71vh;
+    height: 112vh;
     width: 19.5vw;
-    padding: 20px 5px 30px 5px;
+    padding: 40px 5px 30px 5px;
 }
-
 
 
 main article{
-    display: grid;
-    grid-template-rows: repeat(auto, minmax(20px, 1fr));
-    gap: 20px;
-    background-color: #c2c2c2;
-    height: 71vh;
-    width: 80.5vw;
-    padding: 20px 5px 30px 5px;
-    color:#111111;
+    width: 81.2vw;
+    padding: 10px;
 }
 
+main article a section{
+    margin-top: 30px;
+    background-color: #c2c2c2;
+    width: 1050px;
+    height: auto;
+    box-shadow:  #4b4b4b 0 0 6px 5px ;
+    padding: 5px;
+}
 
-.Auto{
-    background-color: #4e4e4e;
+footer{
+    position: absolute;
+    bottom: -70%;
+    background-color: #111111;
+    width: 98.9vw;
 }
