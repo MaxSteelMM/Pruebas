@@ -7,6 +7,7 @@
 </head>
 <body>
     <header>
+        <h1>Contactenos</h1>
         <nav>
 
         </nav>
@@ -14,15 +15,26 @@
     <main>
         <fieldset>
             <select name="opc" id="Opc" value="opc" aria-label="Motivo de la Consulta *">
-            <option selected="" value="">Por favor, escoja un tema.</option>
-            <option value="opc">Accidentalmente choque a E. Wideermann</option>
-            <option value="opc">A mi auto le salieron alas</option>
-        </select><br>
-          <label>Indique su genero</label><br>
+                <option selected="" value="">Por favor, escoja un tema.</option>
+                <option value="opc">Accidentalmente choque a E. Wideermann</option>
+                <option value="opc">A mi auto le salieron alas</option>
+            </select><br>
+            <label>Indique su genero</label><br>
             <input type="radio" name="opc" id="Masc" checked>
             <label for="Masc">Masculino</label><br>
             <input type="radio" name="opc" id="Fem">
             <label for="Fem">Femenino</label><br>
+
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="Nom_usuario" id="nombre" required><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" name="Ape_usuario" id="apellido" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="Email" id="email" required><br>
+
+            <input type="checkbox" name="Recibir" id="Recibir">
+            <label for="Recibir">Quiere recibir notificaciones para futuras promociones?</label>
         </fieldset>
     </main>
 
