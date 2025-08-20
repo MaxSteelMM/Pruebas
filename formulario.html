@@ -71,7 +71,7 @@
 
     .decoracion span{
       background: linear-gradient(90deg,gold,#fff,gold);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: shine 3s infinite linear;
       background-size: 200%;
@@ -116,9 +116,11 @@
       border-radius:10px;
       background:#fff;
       cursor:pointer;
+      transition: background-color 1s, transform 1s;
     }
     .btn:hover{
-      background:#f2f2f2; 
+      background:#f2f2f2;
+      transform: scale(1.05);
       }
 
   </style>
