@@ -10,6 +10,14 @@ body {
     background: #f4f6f8;
     color: #333;
     line-height: 1.6;
+      background-image: 
+      repeating-linear-gradient(
+        45deg,
+        #1a1a1a 0px,
+        #1a1a1a 2px,
+        #111 2px,
+        #111 20px
+             );
 }
 header {
     background: #0d1b2a;
@@ -32,11 +40,16 @@ header {
 .menu a:hover {
     color: #e0a800;
 }
-main {
+main { 
+    color: #111;
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background: #3d3b3b;
     border-radius: 12px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 15px rgba(203, 198, 198, 0.1);
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
 }
