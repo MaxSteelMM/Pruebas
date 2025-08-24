@@ -11,3 +11,14 @@ body {
     color: #333;
     line-height: 1.6;
 }
+header {
+    background: #0d1b2a;
+    padding: 15px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
