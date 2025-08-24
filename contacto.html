@@ -3,49 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
     <title></title>
 </head>
 <body>
     <header>
-        <h1>Contactenos</h1>
-        <nav>
-
-        </nav>
+        <div class="menu">
+            <h1>Contactenos</h1>
+        </div>
     </header>
     <main>
-        <form method="post" action="#">
-            <fieldset>
-                <div>
-                    <select name="opc" id="Opc" value="opc" aria-label="Motivo de la Consulta *">
-                        <option selected="" value="">Por favor, escoja un tema.</option>
-                        <option value="opc">Accidentalmente choque a E. Wideermann</option>
-                        <option value="opc">A mi auto le salieron alas</option>
-                    </select><br>
-                </div>
-                <div class="generos">
-                    <label>Indique su genero</label><br>
-                    <input type="radio" name="opc" id="Masc" checked>
-                    <label for="Masc">Masculino</label><br>
-                    <input type="radio" name="opc" id="Fem">
-                    <label for="Fem">Femenino</label><br>
-                </div>
-                <div class="nom_ape">
-                    <label for="nombre">Nombre</label><br>
-                    <input type="text" name="Nom_usuario" id="nombre" required><br>
-                    <label for="apellido">Apellido</label><br>
-                    <input type="text" name="Ape_usuario" id="apellido" required><br>
-                </div>
-                <div class="email">
-                    <label for="email">Email</label><br>
-                    <input type="email" name="Email" id="email" required><br>
-                </div>
-                <input type="checkbox" name="Recibir" id="Recibir">
-                <label for="Recibir">Quiere recibir notificaciones para futuras promociones?</label>
+        <div class="formulario">
+            <form method="post" action="#">
+                <fieldset>
+                    <div>
+                        <select name="opc" id="Opc" value="opc" aria-label="Motivo de la Consulta *">
+                            <option selected="" value="">Por favor, escoja un tema.</option>
+                            <option value="opc">Accidentalmente choque a E. Wideermann</option>
+                            <option value="opc">A mi auto le salieron alas</option>
+                        </select><br>
+                    </div>
+                    <div class="generos">
+                        <label>Indique su genero</label><br>
+                        <input type="radio" name="opc" id="Masc" checked>
+                        <label for="Masc">Masculino</label><br>
+                        <input type="radio" name="opc" id="Fem">
+                        <label for="Fem">Femenino</label><br>
+                    </div>
+                    <div class="nom_ape">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="Nom_usuario" id="nombre" required><br>
+                        <label for="apellido">Apellido</label><br>
+                        <input type="text" name="Ape_usuario" id="apellido"><br>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="Email" id="email" required><br>
+                    </div>
+                    <input type="checkbox" name="Recibir" id="Recibir">
+                    <label for="Recibir">Quiere recibir notificaciones para futuras promociones?</label>
 
-                <label>Como explicarias tu describirias tu problema?</label><br>
-                <textarea name="Comentarios" cols="50" rows="10" placeholder="Comentarios.."></textarea><br>
-            </fieldset>
-            </form>
+                    <label>Como explicarias tu describirias tu problema?</label><br>
+                    <textarea name="Comentarios" cols="50" rows="10" placeholder="Comentarios.."></textarea><br>
+                </fieldset>
+                </form>
+                </div> 
         <input type="submit" id="enviar" value="enviar">
     </main>
 
