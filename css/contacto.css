@@ -17,7 +17,7 @@ body {
         #1a1a1a 2px,
         #111 2px,
         #111 20px
-             );
+        );
 }
 header {
     background: #000000;
@@ -73,21 +73,27 @@ main {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.188);
 }
 .content img {
     width: 70px;
     height: 70px;
-    border-radius: 50%;   /* círculo */
-    object-fit: cover; /* Cover <------ la imagen se recorta para llenar el contenedor completo, manteniendo la proporción.*/
+    border-radius: 50%; 
+    object-fit: cover; /* Cover <------ la imagen se recorta para llenar el lugar dnd va la imagen.*/
     border: 2px solid #0d1b2a;
 }
 
-
+.content p {
+    margin: 10px;
+    text-align: justify;
+    line-height: 1.2;  
+    letter-spacing: -0.2px;  /* letras ma juntas */
+    font-size: 15px;
+}
 
 
 .formulario {
-       flex: 1;  
+    flex: 1;  
     margin-top: 20px;
 }
 
