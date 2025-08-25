@@ -66,12 +66,31 @@ main {
 }
 .content {
     margin-top: 40px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 1fr; /* imagen a la izquierda y texto al lado */
+    gap: 15px 20px;                 
+    align-items: center;            
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;   /* círculo */
+    object-fit: cover;
+    border: 2px solid #0d1b2a;
+}
+
+.content p {
+    margin: 0;
+    text-align: justify;
 }
 
 .formulario {
+       flex: 1;  
     margin-top: 20px;
 }
 
